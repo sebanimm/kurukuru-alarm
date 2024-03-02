@@ -81,7 +81,7 @@ class App(Frame):
     def _repeat_play_mp3(self):
         playsound("kuru_kuru_herta.mp3")
 
-        schedule.every(10).seconds.do(playsound, "kuru_kuru_herta.mp3")
+        schedule.every(10).minutes.do(playsound, "kuru_kuru_herta.mp3")
 
         def start_schedule():
             while True:
