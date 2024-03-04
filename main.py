@@ -42,10 +42,10 @@ class App(Frame):
 
         self.button.grid(column=0, row=1)
 
-        root.protocol("WM_DELETE_WINDOW", self._stop_program)
+        def _stop_program():
+            root.destroy()
 
-    def _stop_program():
-        root.destroy()
+        root.protocol("WM_DELETE_WINDOW", _stop_program)
 
     def _get_frames(self, img):
         with Image.open(img) as gif:
