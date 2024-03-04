@@ -7,8 +7,8 @@ from PIL import Image, ImageTk
 
 
 class App(Frame):
-    gif_path = "kuru_kuru_herta.gif"
-    mp3_path = "kuru_kuru_herta.mp3"
+    gif_path = "assets/kuru_kuru_herta.gif"
+    mp3_path = "assets/kuru_kuru_herta.mp3"
 
     def __init__(self, root):
         super().__init__(root, bg="WHITE")
